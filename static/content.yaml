@@ -1,0 +1,151 @@
+colors:
+  bg: '#2b303b'
+  dark: '#1d2027'
+  text: '#bf616a'
+  light: '#9ca7b9'
+  accent: '#ebcb8b'
+name:
+  first: Marcus
+  second: Münger
+projects:
+  - name: effidox
+    period:
+      from: 2020
+    link: https://dev.effidox.com
+    description: |-
+      A complete Q&A system joined with a traditional wiki.
+      Supporting a custom markdown subset language with working compiler.
+      Fast stateless user management using JWT.
+      Quick communication with the service using websockets and possible slack integration
+      MongoDB backed sapper service running in docker, full with a logging system, and monitoring with grafana.
+
+  - name: soft-sync
+    link: https://www.npmjs.com/package/soft-sync
+    period:
+      from: 2020
+    description: |-
+      A package and configuration manager for my arch linux installation.
+      It wraps the systems normal package manager but allows for this such as conditional configuration, i.e. "add this line if this other package is installed".
+      It also allows for easy ricing of controled systems
+  - name: otto
+    period:
+      from: 2020
+      to: 2020
+    description: |-
+      Service management system handling deployments and automatic updating of services.
+  - name: blitzbauen
+    period:
+      from: 2020
+      to: 2020
+    description: |-
+      Working albeit incomplete build server
+  - name: datason
+    link: https://www.npmjs.com/package/datason
+    period:
+      from: 2019
+      to: 2020
+    description: |-
+      A joke database simplifying system architecture as it saves all records in the form of JSON files on the filesystem
+  - name: wunderbaren
+    period:
+      from: 2018
+    description: |-
+      A bar inventory and management system complete with user management and RFID card payments.
+      It has gone through 3 iterations over 3 years, going from a microservice java application to a nodeJS + angular application, finally settling on a nodejs + svelte + graphql architecture
+experiences:
+  - company: Kambi
+    role: Developer
+    description: |-
+      Mantained a multitude of applications and started new development of a bet streaming APIs.
+      Later on started working with a regulatory component for the US betting market.
+      This component was responsible for generating taxable reports for operators and constantly working with large datasets, 
+      giving me the confidence in performance analysis of SQL queries
+    technologies:
+      - java
+      - jetty
+      - spring
+      - kafka
+      - postgres
+      - ansible
+      - linux
+      - gradle
+      - maven
+      - bash
+      - svelte
+      - kotlin
+      - jenkins
+      - docker
+    period:
+      from: 2019
+  - company: cybercom
+    role: Developer
+    period:
+      from: 2017
+      to: 2019
+    assignments:
+      - company: Telenor
+        period:
+          from: 2018
+          to: 2019
+        description: |-
+          Worked with a team converting an old legacy monolith to a modern spring boot architecture
+        technologies:
+          - spring boot
+          - java
+          - jenkins
+      - company: Skatteverket
+        period:
+          from: 2018
+          to: 2018
+        description: |-
+          Short assignment working with an internal app for Skatteverket  
+        technologies:
+          - java
+          - docker
+          - angular
+          - hibernate
+      - company: Nordic Cinema Group
+        period:
+          from: 2017
+          to: 2019
+        description: |-
+          Single developer working with the mobile APIs for Filmstaden.
+          Allowing bookings of cinema screenings.
+          Started out as the most unstable component in the eco system and ended as one of the most stable systems.
+          Increased the performance of the system by more than 10x.
+          Also patched a couple of security vulnerabilities.
+        technologies:
+          - java
+          - docker
+          - postgres
+          - wildfly
+          - postman
+          - redis
+          - graylog
+  - company: 24money
+    role: Developer
+    description: |-
+      Worked as a developer on their banking system, fixing security vulnerabilities and general structure.
+      Also begun implementing open banking systems and a custom implementation of OpenID Connect
+    technologies:
+      - java
+      - mysql
+      - tomcat
+      - swagger
+      - openID
+    period:
+      from: 2017
+      to: 2017
+  - company: Swedish Medical Products Agency
+    role: Developer
+    description: |-
+      Worked on their document management/workflow system. 
+      Helped kickstart their first devops team
+    technologies:
+      - java
+      - documentum
+      - jboss
+      - angular
+    period:
+      from: 2015
+      to: 2017

@@ -1,0 +1,48 @@
+kind: pipeline
+type: kubernetes
+steps:
+  - name: test
+    image: node:alpine
+    environment:
+      PLUGIN_USERNAME:
+        from_secret: username
+    commands:
+      - printenv
+      - cd server
+      - npm install
+      - npm audit
+  - name: docker
+    image: plugins/kaniko
+    environment:
+      PLUGIN_USERNAME:
+        from_secret: username
+      PLUGIN_PASSWORD:
+        from_secret: password
+      PLUGIN_TAGS: server
+      PLUGIN_REPO: munhunger/me
+      PLUGIN_DOCKERFILE: server/Dockerfile
+    settings:
+      context: server
+  - name: deploy
+    image: sinlead/drone-kubectl
+    settings:
+      kubernetes_server:
+        from_secret: k8s_server
+      kubernetes_cert:
+        from_secret: k8s_cert
+      kubernetes_token:
+        from_secret: k8s_token
+    commands:
+      - kubectl --namespace="me" rollout restart deployment/node
+---
+kind: secret
+name: username
+get:
+  path: docker
+  name: username
+---
+kind: secret
+name: password
+get:
+  path: docker
+  name: password
