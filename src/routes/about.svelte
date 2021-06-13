@@ -2,6 +2,7 @@
 	import Content from '$lib/components/content.svelte';
 </script>
 
+<svelte:head><title>Marcus Münger - about</title></svelte:head>
 <Content singleCol>
 	<div class="text-lg text-green-500">Who am I?</div>
 

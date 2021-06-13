@@ -52,8 +52,6 @@
 	};
 </script>
 
-<svelte:head><title>Marcus Münger</title></svelte:head>
-
 <svelte:component
 	this={ParticlesComponent}
 	id="tsparticles"

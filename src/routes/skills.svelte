@@ -85,6 +85,8 @@
 	}
 </script>
 
+<svelte:head><title>Marcus Münger - skills</title></svelte:head>
+
 <Content>
 	{#each types as type}
 		<span on:click={() => select(type)} class="text-green-500 font-bold cursor-pointer select-none"

@@ -3,6 +3,8 @@
 	import Short from '$lib/components/short.svelte';
 </script>
 
+<svelte:head><title>Marcus Münger</title></svelte:head>
+
 <Content>
 	<Short
 		{...{
