@@ -7,8 +7,6 @@ steps:
       PLUGIN_USERNAME:
         from_secret: username
     commands:
-      - printenv
-      - cd server
       - npm install
       - npm audit
   - name: docker
@@ -20,9 +18,7 @@ steps:
         from_secret: password
       PLUGIN_TAGS: server
       PLUGIN_REPO: munhunger/me
-      PLUGIN_DOCKERFILE: server/Dockerfile
-    settings:
-      context: server
+      PLUGIN_DOCKERFILE: Dockerfile
   - name: deploy
     image: sinlead/drone-kubectl
     settings:
