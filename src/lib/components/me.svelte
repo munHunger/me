@@ -30,9 +30,9 @@
 <div
 	class="bg-nord-1 p-20 rounded-lg inline-flex flex-col items-center overflow-hidden relative shadow-md"
 >
-	<img class="absolute left-0 top-0 w-full z-10 border-b-2 border-nord-2" src="/bg.jpg" alt="bg" />
+	<img class="absolute left-0 top-0 w-full z-10 border-b-2 border-nord-2" src="/bg.jpg" alt="Marcus Münger" />
 	<div class="z-20">
-		<img class="w-40 rounded-full ring ring-nord-1" src="/1.jpg" alt="me" />
+		<img class="w-40 rounded-full ring ring-nord-1" src="/1.jpg" alt="Marcus Münger" />
 	</div>
 
 	<div class="text-3xl mt-6">Marcus Münger</div>
