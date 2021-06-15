@@ -52,6 +52,19 @@
 	};
 </script>
 
+<svelte:head>
+	<meta name="description" 
+    	content="Marcus Münger passionate developer from Uppsala Sweden. Currently most interested in svelte and node applications as well as devops" />
+	<meta property="og:title" content="Marcus Münger" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://me.munhunger.com/1.jpg" />
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" 
+		content="Marcus Münger passionate developer from Uppsala Sweden. Currently most interested in svelte and node applications as well as devops">
+	<meta name="twitter:title" content="Marcus Münger">
+	<meta name="twitter:image" content="https://me.munhunger.com/1.jpg">
+</svelte:head>
+
 <svelte:component
 	this={ParticlesComponent}
 	id="tsparticles"
