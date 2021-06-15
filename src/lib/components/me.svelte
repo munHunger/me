@@ -35,7 +35,7 @@
 		<img class="w-40 rounded-full ring ring-nord-1" src="/1.jpg" alt="Marcus Münger" />
 	</div>
 
-	<div class="text-3xl mt-6">Marcus Münger</div>
+	<h1 class="text-3xl mt-6">Marcus Münger</h1>
 
 	<div class="text-green-500 text-lg">{role}</div>
 
